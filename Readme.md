@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ренат Казыханов](https://up.htmlacademy.ru/adaptive/28/user/2357193).
-* Наставник: `Arthur Litovko`.
+* Наставник: [Артур Литовко](https://htmlacademy.ru/profile/id6927).
 
 ---
 
