@@ -5,3 +5,30 @@
   font-size: @font-size;
   line-height: @line-height;
 }
+
+.font-family(lowcase; @font-size; @line-height) {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.title {
+  .font-family(18px;26px);
+}
+
+.text {
+  .font-family(14px;21px);
+}
+
+.text-lowcase {
+  .font-family(lowcase; 18px;26px);
+}
+
+.legend {
+  .font-family(12px;21px);
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.6);
+}

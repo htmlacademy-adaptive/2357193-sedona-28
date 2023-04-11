@@ -8,7 +8,7 @@
   <body class="page__body">
     <header class="page__header">
       <a class="page__header__logo">
-        <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
+        <img class="logo-sedona-image" src="img/logo.png" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
@@ -36,13 +36,13 @@
           </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <div class="back">
-        <div class="back__wrapper">
-          <h1 class="visually-hidden">Фото и видео</h1>
-          <img class="back__logo" src="img/catalog/SEDONA.svg" alt="Добро пожаловать в великолепную Седону!">
-        </div>
+    <div class="back">
+      <div class="back__wrapper">
+        <h1 class="visually-hidden">Фото и видео</h1>
+        <img class="back__logo" src="img/catalog/SEDONA.svg" alt="Добро пожаловать в великолепную Седону!">
       </div>
+    </div>
+    <main class="main-container">
       <section class="photo-video">
         <div class="photo-video__wrapper">
           <h2 class="photo-video__title title">Фото и видео</h2>
@@ -50,8 +50,8 @@
         </div>
       </section>
       <ul class="photo-list">
-        <li class="photo-list__item photo-list__item--panorama">
-            <img class="photo-list__image" src="img/catalog/photo-1-mobile.png" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
+        <li class="photo-list__item">
+            <img class="photo-list__image--panorama" src="img/catalog/photo-1-mobile.png" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
             <div class="photo-list-info">
               <h3 class="photo-list__title">Неродные просторы</h3>
               <p class="photo-list__description">Автор фото: Борис</p>
@@ -62,7 +62,7 @@
             </div>
         </li>
         <li class="photo-list__item">
-            <img class="photo-list__image" src="img/catalog/photo-2-mobile.png" width="280" height="280" alt="Растения в Седоне.">
+            <img class="photo-list__image--plants" src="img/catalog/photo-2-mobile.png" width="280" height="280" alt="Растения в Седоне.">
             <div class="photo-list-info">
               <h3 class="photo-list__title">Местная растительность</h3>
               <p class="photo-list__description">Автор фото: Сергей</p>
@@ -73,7 +73,7 @@
             </div>
         </li>
         <li class="photo-list__item">
-            <img class="photo-list__image" src="img/catalog/photo-3-mobile.png" width="280" height="280" alt="Лесная дорога в Седоне.">
+            <img class="photo-list__image--forest" src="img/catalog/photo-3-mobile.png" width="280" height="280" alt="Лесная дорога в Седоне.">
             <div class="photo-list-info">
               <h3 class="photo-list__title">Дорога на север</h3>
               <p class="photo-list__description">Автор фото: Петр</p>
@@ -84,7 +84,7 @@
             </div>
         </li>
         <li class="photo-list__item">
-            <img class="photo-list__image" src="img/catalog/photo-4-desktop.png" width="280" height="280" alt="Мост дьявола.">
+            <img class="photo-list__image--bridge" src="img/catalog/photo-4-desktop.png" width="280" height="280" alt="Мост дьявола.">
             <div class="photo-list-info">
               <h3 class="photo-list__title">Мост дьявола</h3>
               <p class="photo-list__description">Автор фото: Антон</p>
@@ -106,30 +106,35 @@
           </div>
       </section>
     </main>
-    <footer class="page__footer">
-      <div class="page__footer__hashtag hashtag">
-        <a class="hashtag-sedona" href="">#visitSEDONA</a>
-      </div>
-      <div class="page__footer__social social">
-        <h2 class="page__hidden">Социальные сети.</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">Телеграм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
-          </li>
-        </ul>
-      </div>
-      <small class="page__footer__development development">
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__contacts contacts">
+          <b class="contacts__title title">#visitSEDONA</b>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <img class="social__logo" src="img/footer/social-vk.svg" alt="Мы Вконтакте!">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="social__logo" src="img/footer/social-youtube.svg" alt="Мы в ютубе!">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <img class="social__logo" src="img/footer/social-telegram.svg" alt="Мы в тулеге!">
+              </a>
+            </li>
+          </ul>
+        </div>
         <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
           <small class="development__text">Разработано</small>
           <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
         </a>
-      </small>
+      </div>
     </footer>
   </body>
 </html>
