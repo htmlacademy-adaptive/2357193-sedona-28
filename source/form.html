@@ -3,70 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>Отзыв</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/back-mobile.jpg" width="185" height="96" alt="Седона">
+    <header class="page__header">
+      <a class="page__header__logo">
+        <img class="logo-sedona-image" src="img/logo.png" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span></button>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="#">
+        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="main-nav__item">
+              <a class="main-nav__link"  href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="main-nav__item">
+              <a class="main-nav__link">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
                 Html Academy
               </a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
-    <main class="main-container">
-      <h1 class="">Седона</h1>
+    <div class="back">
+      <div class="back__wrapper">
+        <h1 class="visually-hidden">Форма обратной связи</h1>
+        <img class="back__logo" src="img/catalog/SEDONA.svg" alt="Добро пожаловать в великолепную Седону!">
+      </div>
+    </div>
 
+    <main class="main-container">
       <section class="review">
         <div class="review__wrapper">
-          <h2 class="review__header">
+          <h2 class="review__title title">
             Оставьте свой отзыв!
           </h2>
-          <p class="review__text">Помогите нашим отелям стать Лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="review__text text">Помогите нашим отелям стать Лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
 
       <section class="perfomance">
         <div class="perfomance__wrapper">
-          <h2 class="perfomance__title">
+          <h2 class="perfomance__title title">
             Представьтесь:
           </h2>
           <div class="perfomance__item">
-            <label class="form-label" for="input-name">Имя*:</label>
+            <label class="form-label text" for="input-name">Имя*:</label>
             <input class="input-text" id="input-name" placeholder="Введите имя">
           </div>
           <div class="perfomance__item">
-            <label class="form-label" for="input-second-name">Фамилия*:</label>
+            <label class="form-label text" for="input-second-name">Фамилия*:</label>
             <input class="input-text" id="input-second-name" placeholder="Введите Фамилию">
           </div>
           <div class="perfomance__item">
-            <label class="form-label" for="input-surname">Отчество*:</label>
+            <label class="form-label text" for="input-surname">Отчество*:</label>
             <input class="input-text" id="input-surname" placeholder="Введите отчество">
           </div>
         </div>
@@ -74,16 +76,16 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">
+          <h2 class="contacts__title title">
             Контактная информация:
           </h2>
           <div class="contacts__item">
-            <label class="form-label" for="input-phone">Контактный телефон*:</label>
+            <label class="form-label text" for="input-phone">Контактный телефон*:</label>
             <input class="input-text" id="input-phone" placeholder="Введите телефон">
             <span class="input-text"></span>
           </div>
           <div class="contacts__item">
-            <label class="form-label" for="input-mail">Электронная почта*:</label>
+            <label class="form-label text" for="input-mail">Электронная почта*:</label>
             <input class="input-text" id="input-mail" placeholder="Введите e-mail">
             <span class="input-text"></span>
           </div>
@@ -92,60 +94,60 @@
 
       <section class="impression">
         <div class="impression__wrapper">
-          <h2 class="impression__title">
+          <h2 class="impression__title title">
             Ваше общее впечатление:
           </h2>
           <div class="impression__item">
             <input class="input-check" type="radio" id="radio-good" name="impression-radio">
-            <label class="form-label" for="radio-good">Скорее положительное</label>
+            <label class="form-label text-lowcase" for="radio-good">Скорее положительное</label>
           </div>
           <div class="impression__item">
             <input class="input-check" type="radio" id="radio-bad" name="impression-radio">
-            <label class="form-label" for="radio-bad">Скорее отрицательное</label>
+            <label class="form-label text-lowcase" for="radio-bad">Скорее отрицательное</label>
           </div>
           <div class="impression__item">
             <input class="input-check" type="radio" id="radion-unknown" name="impression-radio">
-            <label class="form-label" for="radion-unknown">Задрудняюсь ответить</label>
+            <label class="form-label text-lowcase" for="radion-unknown">Задрудняюсь ответить</label>
           </div>
         </div>
       </section>
 
       <section class="visited">
         <div class="visited__wrapper">
-          <h2 class="visited__title">
+          <h2 class="visited__title title">
             Посещенные достопремичательности:
           </h2>
           <div class="visited__item">
             <input class="input-check" type="checkbox" id="check-bridge">
-            <label class="form-label" for="check-bridge">Мост Дьявола</label>
+            <label class="form-label text-lowcase" for="check-bridge">Мост Дьявола</label>
           </div>
           <div class="visited__item">
             <input class="input-check" type="checkbox" id="check-hill">
-            <label class="form-label" for="check-hill">Гора-Колокол</label>
+            <label class="form-label text-lowcase" for="check-hill">Гора-Колокол</label>
           </div>
           <div class="visited__item">
             <input class="input-check" type="checkbox" id="check-park">
-            <label class="form-label" for="check-park">Слайд парк</label>
+            <label class="form-label text-lowcase" for="check-park">Слайд парк</label>
           </div>
           <div class="visited__item">
             <input class="input-check" type="checkbox" id="check-rocks">
-            <label class="form-label" for="check-rocks">Красные скалы</label>
+            <label class="form-label text-lowcase" for="check-rocks">Красные скалы</label>
           </div>
         </div>
       </section>
 
       <section class="emotions">
         <div class="emotions__wrapper">
-          <h2 class="emotions__title">
+          <h2 class="emotions__title title">
             Опишите свои эмоции:
           </h2>
           <textarea class="emotions_textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-          <button class="btn">Отправить отзыв</button>
+          <button class="button">Отправить отзыв</button>
           <p class="legend">* - обязательные поля</p>
         </div>
       </section>
 
-      <div class="modal-error">
+      <div class="modal-error visually-hidden">
         <div class="modal-error__content">
           <h5 class="modal-error__title">Что-то пошло не так!</h5>
           <div class="modal-error__body">
@@ -155,7 +157,7 @@
         </div>
       </div>
 
-      <div class="modal-ok">
+      <div class="modal-ok visually-hidden">
         <div class="modal-ok__content">
           <h5 class="modal-ok__title">Ваш отзыв отправлен!</h5>
           <div class="modal-ok__body">
@@ -164,32 +166,39 @@
           <button class="btn">ОК</button>
         </div>
       </div>
-
-      <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__contacts contacts">
-            <b class="contacts__title">#visitSEDONA</b>
-          </div>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
-
     </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__contacts contacts">
+          <b class="contacts__title title">#visitSEDONA</b>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <img class="social__logo" src="img/footer/social-vk.svg" alt="Мы Вконтакте!">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="social__logo" src="img/footer/social-youtube.svg" alt="Мы в ютубе!">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <img class="social__logo" src="img/footer/social-telegram.svg" alt="Мы в тулеге!">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <small class="development__text">Разработано</small>
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
+        </a>
+      </div>
+    </footer>
+
+    
   </body>
 </html>
