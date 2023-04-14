@@ -1,10 +1,18 @@
 .photo-list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-list__item {
+  list-style: none;
+  width: 280px;
 }
 
 .photo-list__title {
   .font-family(14px,21px);
+  margin: 0;
 }
 
 .photo-list__description {
@@ -13,6 +21,9 @@
 
 .photo-list__image--panorama {
   background-color: #eeb76f;
+  background-image: url("../img/catalog/photo-1-mobile.png");
+  height: 280px;
+  width: 280px;
 }
 
 .photo-list__image--plants {
@@ -25,4 +36,28 @@
 
 .photo-list__image--bridge {
   background-color: #c5a677;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-list__image--panorama {
+    background-image: url("../img/catalog/photo-1-tablet.png");
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo-list-info {
+    background-color: #f2f2f2;
+  }
+
+  .photo-list-info--panorama {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-list__image--panorama {
+    background-image: url("../img/catalog/photo-1-desktop.png");
+    width: 1200px;
+    height: 400px;
+  }
 }

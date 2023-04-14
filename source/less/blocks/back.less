@@ -7,6 +7,7 @@
   background-color: #3699bd;
   position: relative;
   background-size: cover;
+  z-index: -1;
 }
 
 .back__logo {
@@ -16,4 +17,27 @@
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .back {
+    height: 518px;
+    width: 768px;
+    //left: -216px;
+    //top: -172px;
+    background-image: url("../img/back-tablet.png");
+  }
+
+  .back__logo {
+    width: 460px;
+    height: 77.6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .back {
+    width: 1200px;
+    height: 518px;
+    background-image: url("../img/back-tablet.png");
+  }
 }
