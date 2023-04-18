@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=2">
     <meta charset="utf-8">
     <title>Отзыв</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page__header">
-      <a class="page__header__logo">
-        <img class="logo-sedona-image" src="img/logo.png" width="185" height="96" alt="Логотип City of Sedona.">
-      </a>
+      <button class="main-nav__toggle" type="button"></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link"  href="catalog.html">
-                Фото и видео
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Html Academy
-              </a>
-            </li>
-          </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link"  href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li>
+            <a class="page__header__logo" href="index.html">
+              <img class="logo-sedona-image" src="img/logo.png" width="185" height="96" alt="Логотип City of Sedona.">
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">
+              Html Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -54,8 +57,8 @@
         </div>
       </section>
 
-      <section class="perfomance">
-        <div class="perfomance__wrapper">
+      <section class="user-info">
+        <div class="perfomance">
           <h2 class="perfomance__title title">
             Представьтесь:
           </h2>
@@ -72,10 +75,8 @@
             <input class="input-text" id="input-surname" placeholder="Введите отчество">
           </div>
         </div>
-      </section>
 
-      <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts">
           <h2 class="contacts__title title">
             Контактная информация:
           </h2>
@@ -93,10 +94,10 @@
       </section>
 
       <section class="impression">
+        <h2 class="impression__title title">
+          Ваше общее впечатление:
+        </h2>
         <div class="impression__wrapper">
-          <h2 class="impression__title title">
-            Ваше общее впечатление:
-          </h2>
           <div class="impression__item">
             <input class="input-check" type="radio" id="radio-good" name="impression-radio">
             <label class="form-label text-lowcase" for="radio-good">Скорее положительное</label>
@@ -113,10 +114,10 @@
       </section>
 
       <section class="visited">
+        <h2 class="visited__title title">
+          Посещенные достопремичательности:
+        </h2>
         <div class="visited__wrapper">
-          <h2 class="visited__title title">
-            Посещенные достопремичательности:
-          </h2>
           <div class="visited__item">
             <input class="input-check" type="checkbox" id="check-bridge">
             <label class="form-label text-lowcase" for="check-bridge">Мост Дьявола</label>
@@ -169,36 +170,32 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__contacts contacts">
-          <b class="contacts__title title">#visitSEDONA</b>
-        </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <img class="social__logo" src="img/footer/social-vk.svg" alt="Мы Вконтакте!">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <img class="social__logo" src="img/footer/social-youtube.svg" alt="Мы в ютубе!">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <img class="social__logo" src="img/footer/social-telegram.svg" alt="Мы в тулеге!">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <small class="development__text">Разработано</small>
-          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
-        </a>
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title title">#visitSEDONA</b>
       </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <img class="social__logo" src="img/footer/social-vk.svg" alt="Мы Вконтакте!">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social__logo" src="img/footer/social-youtube.svg" alt="Мы в ютубе!">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <img class="social__logo" src="img/footer/social-telegram.svg" alt="Мы в тулеге!">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <small class="development__text">Разработано</small>
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
+      </a>
     </footer>
-
-    
   </body>
 </html>

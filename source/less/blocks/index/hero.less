@@ -5,6 +5,7 @@
   background-image: url("../img/back-mobile.jpg");
   background-color: #3699bd;
   position: relative;
+  z-index: -1;
 }
 
 .hero__logo {
@@ -14,4 +15,26 @@
   bottom: 0;
   left: 0;
   margin: auto;
+  width: 282px;
+  height: 214px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    height: 518px;
+    background-image: url("../img/back-tablet.png");
+  }
+
+  .hero__logo {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    height: 518px;
+    background-image: url("../img/back-desktop.png");
+    background-size: cover;
+  }
 }
