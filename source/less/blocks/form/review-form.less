@@ -1,0 +1,54 @@
+.review-form__button {
+  font-size: 21px;
+  padding: 16px 49px 16px 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 384px;
+  }
+}
+
+.review-form__legend {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  color: hsla(0, 0%, 20%, 0.6);
+  text-transform: uppercase;
+}
+
+.note {
+  @media (max-width: @tablet-width) {
+    margin-left: 150px;
+  }
+}
+
+.review-form__note {
+  display: flex;
+  margin-bottom: 64px;
+  justify-content: space-between;
+
+
+  @media (max-width: @tablet-width) {
+    padding: 0 var(--side-offset, 20px);
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 var(--side-offset, 60px);
+    margin-top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 var(--side-offset, 120px);
+    display: flex;
+  }
+}

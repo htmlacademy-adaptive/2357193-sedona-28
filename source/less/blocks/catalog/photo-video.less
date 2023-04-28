@@ -1,9 +1,30 @@
 .photo-video__title {
-  .font-family(21px;26px);
+  .font-family(18px;26px);
+
+  @media (min-width: @tablet-width) {
+    .font-family(30px;26px);
+  }
 }
 
 .photo-video__description {
-  .font-family(18px;26px);
+  .font-family(14px;21px);
   font-weight: 400;
   color: #333333;
+
+  @media (min-width: @tablet-width) {
+    .font-family(14px;21px);
+    font-weight: 400;
+  }
+}
+
+.photo-video__wrapper {
+  padding: 25px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 385px 65px 385px;
+  }
 }
