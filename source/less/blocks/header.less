@@ -9,12 +9,23 @@
   height: 56px;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.main-nav {
+  width: 100%;
+  z-index: 20;
+  position: relative;
 }
 
 .main-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.main-nav__logo {
+  z-index: 30;
 }
 
 .main-nav__item {
@@ -31,13 +42,108 @@
 }
 
 .main-nav__toggle {
-  background-image: url("../img/icon-menu.svg");
-  width: 24px;
-  height: 20px;
-  border-style: none;
-  margin-top: 17px;
-  margin-left: 25px;
-  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  display: block;
+  width: 68px;
+  height: 56px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  width: 23px;
+  height: 4px;
+  background-color: @blue;
+  box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+}
+
+.main-nav--opened {
+  .main-nav__item {
+    .font-family(18px;26px;);
+    display: flex;
+    background-color: #81b3d2;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid rgba(1, 1, 1, 0.2);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+
+    &:hover,
+    &:active {
+      background-color: #669ec0;
+    }
+  }
+
+  .main-nav__toggle {
+    top: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#ffffff, 30%);
+    }
+  }
+
+  .main-nav__link {
+    color: @white;
+  }
+
+  .main-nav__logo {
+    display: none;
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo {
+    display: none;
+  }
+
+  .main-nav__item {
+    .font-family(18px;26px;);
+    display: flex;
+    background-color: #81b3d2;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(1, 1, 1, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover,
+    &:active {
+      background-color: #669ec0;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -63,4 +169,3 @@
     display: block;
   }
 }
-

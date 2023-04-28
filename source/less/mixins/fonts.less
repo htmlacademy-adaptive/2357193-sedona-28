@@ -4,6 +4,7 @@
   text-align: center;
   font-size: @font-size;
   line-height: @line-height;
+  font-weight: 700;
 }
 
 .font-family(lowcase; @font-size; @line-height) {
@@ -15,12 +16,25 @@
   font-weight: 700;
 }
 
+.big-title {
+  .font-family(18px;26px);
+
+  @media (min-width: @tablet-width) {
+    .font-family(30px;26px);
+  }
+}
+
 .title {
   .font-family(18px;26px);
+
+  @media (min-width: @tablet-width) {
+    .font-family(21px;26px);
+  }
 }
 
 .text {
   .font-family(14px;21px);
+  font-weight: 400;
 }
 
 .text-lowcase {
